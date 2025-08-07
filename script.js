@@ -5,11 +5,6 @@ document.getElementById("formContato").addEventListener("submit", function (e) {
   this.reset();
 });
 
-// Alternar modo claro/escuro
-document.getElementById("toggleTema").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
-
 // Chat fictício
 document.getElementById("chat-form").addEventListener("submit", function (e) {
   e.preventDefault();
