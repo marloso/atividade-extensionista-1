@@ -14,26 +14,25 @@
         <a href="#home">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#equipe">Equipe</a>
         <a href="#contato">Contato</a>
       </nav>
+      <button id="toggleTema">🌙</button>
     </div>
   </header>
 
-  <section id="home" class="hero">
+  <section id="home" class="hero section-ajustada">
     <div class="container">
       <h2>Bem-vindo à Vida Plena</h2>
       <p>Cuidado, carinho e dignidade para a melhor idade.</p>
     </div>
   </section>
 
-  <section id="sobre" class="container">
+  <section id="sobre" class="container section-ajustada">
     <h2>Sobre Nós</h2>
     <p>Somos uma casa de apoio dedicada a oferecer um ambiente acolhedor, seguro e cheio de amor para idosos. Com uma equipe especializada, proporcionamos bem-estar físico, emocional e social.</p>
   </section>
 
-  <section id="servicos" class="container">
+  <section id="servicos" class="container section-ajustada">
     <h2>Serviços</h2>
     <ul>
       <li>Acompanhamento médico e psicológico</li>
@@ -43,34 +42,7 @@
     </ul>
   </section>
 
-  <section id="galeria" class="container">
-    <h2>Galeria</h2>
-    <div class="galeria">
-      <img src="https://via.placeholder.com/200x150" alt="Imagem 1" />
-      <img src="https://via.placeholder.com/200x150" alt="Imagem 2" />
-      <img src="https://via.placeholder.com/200x150" alt="Imagem 3" />
-    </div>
-  </section>
-
-  <section id="equipe" class="container">
-    <h2>Nossa Equipe</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Dra. Ana Souza</h3>
-        <p>Médica Geriatra</p>
-      </div>
-      <div class="card">
-        <h3>João Lima</h3>
-        <p>Enfermeiro Chefe</p>
-      </div>
-      <div class="card">
-        <h3>Maria Silva</h3>
-        <p>Coordenadora de Atividades</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato" class="container">
+  <section id="contato" class="container section-ajustada">
     <h2>Fale Conosco</h2>
     <form id="formContato">
       <input type="text" placeholder="Seu nome" required />
@@ -79,6 +51,18 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
+  <!-- Chat Online Fictício -->
+  <div id="chat-container">
+    <div id="chat-header">Chat Online</div>
+    <div id="chat-body">
+      <div class="chat-message bot">Olá! Como posso ajudar?</div>
+    </div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Digite sua mensagem..." />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 
   <footer>
     <div class="container">
