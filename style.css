@@ -9,7 +9,6 @@ body {
   background-color: #e6ecf3;
   color: #333;
   scroll-behavior: smooth;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -51,12 +50,15 @@ nav a {
   padding: 100px 20px;
 }
 
-.hero p,
 .hero .subtexto {
   font-size: 1.2em;
   color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
 }
-
 
 .section-ajustada {
   scroll-margin-top: 100px;
@@ -76,7 +78,8 @@ ul {
   padding-left: 20px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px;
