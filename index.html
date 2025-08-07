@@ -3,64 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa de Apoio aos Idosos</title>
+  <title>Casa de Apoio Vida Plena</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Cabeçalho do site -->
   <header>
-    <h1>Casa de Apoio aos Idosos</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#sobre">Sobre Nós</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#ajudar">Como Ajudar</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="container">
+      <h1>Casa de Apoio Vida Plena</h1>
+      <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Seção: Home -->
-  <section id="home">
-    <h2>Bem-vindo!</h2>
-    <p>Promovendo o cuidado e bem-estar dos idosos com amor e respeito.</p>
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Bem-vindo à Vida Plena</h2>
+      <p>Cuidado, carinho e dignidade para a melhor idade.</p>
+    </div>
   </section>
 
-  <!-- Seção: Sobre Nós -->
-  <section id="sobre">
+  <section id="sobre" class="container">
     <h2>Sobre Nós</h2>
-    <p>A nossa instituição tem como objetivo oferecer um ambiente acolhedor para os idosos, proporcionando atendimento humanizado e atividades que estimulam o convívio e a qualidade de vida.</p>
+    <p>Somos uma casa de apoio dedicada a oferecer um ambiente acolhedor, seguro e cheio de amor para idosos. Com uma equipe especializada, proporcionamos bem-estar físico, emocional e social.</p>
   </section>
 
-  <!-- Seção: Serviços -->
-  <section id="servicos">
+  <section id="servicos" class="container">
     <h2>Serviços</h2>
     <ul>
-      <li>Cuidado diário e monitoramento de saúde</li>
-      <li>Atividades recreativas e terapêuticas</li>
-      <li>Suporte emocional e social</li>
+      <li>Acompanhamento médico e psicológico</li>
+      <li>Atividades físicas e recreativas</li>
+      <li>Alimentação balanceada</li>
+      <li>Cuidados de enfermagem 24h</li>
     </ul>
   </section>
 
-  <!-- Seção: Como Ajudar -->
-  <section id="ajudar">
-    <h2>Como Ajudar</h2>
-    <p>Seu apoio pode fazer toda a diferença! Descubra como se voluntariar, doar ou formar parcerias conosco.</p>
+  <section id="galeria" class="container">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/200x150" alt="Imagem 1" />
+      <img src="https://via.placeholder.com/200x150" alt="Imagem 2" />
+      <img src="https://via.placeholder.com/200x150" alt="Imagem 3" />
+    </div>
   </section>
 
-  <!-- Seção: Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
+  <section id="equipe" class="container">
+    <h2>Nossa Equipe</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Dra. Ana Souza</h3>
+        <p>Médica Geriatra</p>
+      </div>
+      <div class="card">
+        <h3>João Lima</h3>
+        <p>Enfermeiro Chefe</p>
+      </div>
+      <div class="card">
+        <h3>Maria Silva</h3>
+        <p>Coordenadora de Atividades</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Fale Conosco</h2>
     <form id="formContato">
       <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu email" required />
+      <input type="email" placeholder="Seu e-mail" required />
       <textarea placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Casa de Apoio aos Idosos</p>
+    <div class="container">
+      <p>&copy; 2025 Casa de Apoio Vida Plena - Todos os direitos reservados</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
