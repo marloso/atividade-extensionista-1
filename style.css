@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #e6ecf3; /* tom suave e mais escuro */
   color: #333;
   scroll-behavior: smooth;
   transition: background-color 0.3s, color 0.3s;
@@ -44,18 +44,6 @@ nav a {
   font-weight: bold;
 }
 
-#toggleTema {
-  display: block;
-  margin: 0 auto;
-  padding: 5px 10px;
-  font-size: 18px;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .hero {
   background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
   color: white;
@@ -63,8 +51,13 @@ nav a {
   padding: 100px 20px;
 }
 
+.hero p {
+  font-size: 1.2em;
+  color: #d1e8ff; /* azul claro suave para contraste */
+}
+
 .section-ajustada {
-  scroll-margin-top: 100px; /* Corrige posição ao clicar no menu */
+  scroll-margin-top: 100px;
 }
 
 section {
@@ -105,31 +98,14 @@ footer {
   margin-top: 40px;
 }
 
-/* Modo escuro */
-body.dark {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-body.dark header,
-body.dark footer {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-
-body.dark nav a,
-body.dark #toggleTema {
-  color: #fff;
-  border-color: #fff;
-}
-
 /* Chat */
 #chat-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 280px;
-  background-color: #fff;
+  width: 90%;
+  max-width: 320px;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -184,17 +160,4 @@ body.dark #toggleTema {
   background-color: #005b96;
   color: white;
   cursor: pointer;
-}
-
-body.dark #chat-container {
-  background-color: #1e1e1e;
-  border-color: #444;
-}
-
-body.dark #chat-body {
-  background-color: #2b2b2b;
-}
-
-body.dark .chat-message.bot {
-  color: #66ccff;
 }
