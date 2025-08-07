@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #e6ecf3; /* tom suave e mais escuro */
+  background-color: #e6ecf3;
   color: #333;
   scroll-behavior: smooth;
   transition: background-color 0.3s, color 0.3s;
@@ -51,10 +51,12 @@ nav a {
   padding: 100px 20px;
 }
 
-.hero p {
+.hero p,
+.hero .subtexto {
   font-size: 1.2em;
-  color: #d1e8ff; /* azul claro suave para contraste */
+  color: #333;
 }
+
 
 .section-ajustada {
   scroll-margin-top: 100px;
