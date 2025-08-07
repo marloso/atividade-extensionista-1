@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,87 +5,114 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+  scroll-behavior: smooth;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #006699;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  background-color: #005b96;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 header h1 {
+  text-align: center;
   margin-bottom: 10px;
 }
 
+nav {
+  text-align: center;
+}
+
 nav a {
-  margin: 0 15px;
-  color: #fff;
+  margin: 0 10px;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-/* Seções */
 section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-  background-color: #ffffff;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
 }
 
-section h2 {
-  color: #006699;
+h2 {
   margin-bottom: 20px;
+  color: #005b96;
 }
 
-/* Lista de serviços */
 ul {
-  list-style: disc inside;
+  list-style: disc;
+  padding-left: 20px;
 }
 
-/* Formulário de contato */
-form input,
-form textarea {
+.galeria {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+form input, form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 5px;
 }
 
 form button {
-  background-color: #006699;
-  color: #fff;
+  background-color: #005b96;
+  color: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
-form button:hover {
-  background-color: #004d66;
-}
-
-/* Rodapé */
 footer {
+  background-color: #ccc;
   text-align: center;
-  background-color: #ddd;
-  padding: 15px;
+  padding: 20px;
   margin-top: 40px;
-  color: #333;
 }
