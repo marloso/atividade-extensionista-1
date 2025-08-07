@@ -1,29 +1,14 @@
-// Envio do formulário de contato
-document.getElementById("formContato").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Sua mensagem foi enviada com sucesso!");
-  this.reset();
+// Função para rolar suavemente até a seção clicada no menu
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 60, // Desconta a altura do header
+        behavior: 'smooth'
+      });
+    }
+  });
 });
-
-// Chat fictício
-document.getElementById("chat-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const input = document.getElementById("chat-input");
-  const message = input.value.trim();
-  if (message !== "") {
-    adicionarMensagem("user", message);
-    setTimeout(() => {
-      adicionarMensagem("bot", "Em breve alguém da equipe irá te responder 😊");
-    }, 1000);
-  }
-  input.value = "";
-});
-
-function adicionarMensagem(tipo, texto) {
-  const chatBody = document.getElementById("chat-body");
-  const msg = document.createElement("div");
-  msg.className = "chat-message " + tipo;
-  msg.textContent = texto;
-  chatBody.appendChild(msg);
-  chatBody.scrollTop = chatBody.scrollHeight;
-}
